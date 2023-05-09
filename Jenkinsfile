@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -t jadhav957/joboneimage .'
+        sh 'docker build -t jadhav957/joboneimage /home/ubuntu/jenkins/workspace/Pipeline/Dockerfile'
       }
     }
     stage('Login') {
